@@ -1,1 +1,1 @@
-# This web app is for to answer mutiple choice questions . 
+# This web app is for  answering mutiple choice questions . 
