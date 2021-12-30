@@ -10,7 +10,7 @@
 const form=document.getElementById('quiz-form')
 const answers= Array.from(document.querySelectorAll('.answer')) 
 const questionitems=document.querySelectorAll(".question-item")
-const alert=document.querySelector(#alert)
+const alert=document.querySelector("#alert")
 
 //const questionItems = document.querySelectorAll(".question-item")
 form.addEventListener("submit",e=>{
@@ -45,14 +45,14 @@ checkedanswers.forEach(answer=>{
   //console.log(isCorrect)
   //   7. BONUS: If all answers are correct show the element with the id `alert` and hide it after one second (look into setTimeout) (use the class active to show the alert and remove the class to hide it)
   const allTrue=checkedanswers.every(answer=>answer.value==="true")
-
-  if(allTrue){
+ const allAnswered=checkedanswers.length===questionitems.length
+  if(allTrue && allAnswered){
     alert.classList.add("active")
   }
   setTimeout(()=>{
    alert.classList.remove("active")
   },1000)
-
+ 
 })
 
 
